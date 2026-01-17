@@ -1,18 +1,21 @@
-## Getting Started
+# 🔨 Sistema de Gestão de Leilões
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Sistema de gerenciamento de leilões desenvolvido em Java, focado na aplicação de conceitos de Orientação a Objetos e persistência de dados em arquivos de texto.
 
-## Folder Structure
+## 📋 Sobre o Projeto
+Este projeto é uma aplicação via console (CLI) que permite o cadastro e administração de leilões, participantes e lances. O diferencial do sistema é o uso de **manipulação de arquivos (I/O)** para salvar os dados, garantindo que as informações persistam mesmo após fechar o programa.
 
-The workspace contains two folders by default, where:
+## 🚀 Funcionalidades
+* **Gestão de Participantes:** Cadastro e listagem de usuários.
+* **Gestão de Leilões:** Criação, iniciação e finalização de leilões.
+* **Sistema de Lances:** Registro de lances em leilões ativos.
+* **Persistência de Dados:** Todos os cadastros são salvos automaticamente em arquivos `.txt` (Banco de dados em arquivo).
+* **Menu Interativo:** Interface via terminal para navegação entre as opções.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## 🛠️ Tecnologias Utilizadas
+* **Java** (Lógica e POO)
+* **Java I/O** (FileWriter/FileReader para manipulação de arquivos)
+* **VS Code** (IDE de desenvolvimento)
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## 📂 Estrutura do Projeto
+O código segue o padrão MVC simplificado, separando as classes de domínio (`Leilao`, `Participante`, `Lance`) da classe principal de execução (`App.java`).
